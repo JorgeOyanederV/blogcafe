@@ -192,6 +192,7 @@ img {
 .curso {
   padding-bottom: 3rem;
   border-bottom: 1px solid black;
+  padding-top: 3rem;
 }
 
 .curso:last-of-type {
@@ -204,7 +205,8 @@ img {
   font-size: 2rem;
 }
 
-.curso p span {
+.curso p span, .curso p.descripcion {
+  /**ojo aqui**/
   font-weight: 400;
 }
 
@@ -239,11 +241,13 @@ img {
     column-gap: 1rem;
     margin: 0 auto;
   }
+
   .contenedor-6 p {
     font-size: 1.3rem;
     text-align: justify;
   }
-  .contenedor h2{
+
+  .contenedor h2 {
     margin: 1rem 0;
   }
 }
