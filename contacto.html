@@ -31,21 +31,31 @@
       </div>
     </div>
   </header>
+
   <main class="contenedor">
-    <h2 class="centrar-texto">Sobre Nosotros</h2>
-    <div class="grid">
-      <div class="columnas-6">
-        <img src="img/nosotros.jpg" alt="imagen nosotros">
+    <h2 class="centrar-texto">Contacto</h2>
+    <div class="grid centrar-columnas">
+      <div class="columnas-12">
+        <img src="img/contacto.jpg" alt="imagen contacto">
       </div>
-      <div class="columnas-6">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit tellus, condimentum a odio congue, semper vulputate ex. Sed aliquet diam augue, id lobortis erat imperdiet quis. Pellentesque egestas placerat porttitor. Vivamus et
-          malesuada turpis, et egestas nisi.
-        </p>
-        <p>
-          Donec iaculis odio velit, eget dignissim purus fringilla at. In ut porttitor mi. Nam purus mauris, venenatis vitae vestibulum ac, hendrerit sit amet turpis. Fusce congue scelerisque velit. Vestibulum
-          gravida erat placerat augue mattis ornare.
-        </p>
+      <div class="columnas-10 formulario-contacto">
+        <form action="#">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu Nombre">
+          </div>
+          <div class="campo">
+            <label for="email">Correo</label>
+            <input type="email" id="email" placeholder="Tu Correo">
+          </div>
+          <div class="campo mensaje">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje"></textarea>
+          </div>
+          <div class="campo enviar">
+            <input type="submit" value="Enviar" class="btn btn-primario">
+          </div>
+        </form>
       </div>
     </div>
   </main>
