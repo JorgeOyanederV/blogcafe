@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 2;
 }
 
@@ -209,7 +209,7 @@ img {
 .curso p {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .curso p span, .curso p.descripcion {
@@ -244,6 +244,10 @@ img {
 /*grid*/
 @media (min-width: 768px) {
   .grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  .grid-contacto{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
