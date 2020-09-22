@@ -289,15 +289,22 @@ img {
     margin-top: -10rem;
   }
 }
-
 .formulario-contacto .campo {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
+@media (min-width: 768px) {
+  .formulario-contacto .campo {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+}
+
 
 .formulario-contacto .campo label {
-  flex: 0 0 8rem;
+  flex: 0 0 auto;
 }
 
 .formulario-contacto .campo input:not([type="submit"]),
@@ -308,7 +315,7 @@ img {
 }
 
 .formulario-contacto textarea {
-  height: 20rem;
+  height: 10rem;
 }
 
 .formulario-contacto .enviar {
