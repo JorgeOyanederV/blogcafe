@@ -1,5 +1,3 @@
-1
-
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
@@ -11,9 +9,13 @@ html {
   box-sizing: inherit;
 }
 
+p{
+  font-size: 2rem;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   line-height: 2;
 }
 
@@ -209,7 +211,7 @@ img {
 .curso p {
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .curso p span, .curso p.descripcion {
@@ -289,25 +291,24 @@ img {
     margin-top: -10rem;
   }
 }
-.formulario-contacto .campo {
+.campo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
-  .formulario-contacto .campo {
+  .campo {
     flex-direction: row;
-    column-gap: 2rem;
+    justify-content:space-around;
   }
 }
 
-
-.formulario-contacto .campo label {
-  display:block;
+.campo label {
+  width: 10%;
 }
 
-.formulario-contacto .campo input:not([type="submit"]),
+.campo input:not([type="submit"]),
 .formulario-contacto textarea {
   flex: 1;
   border: 0.1rem solid black;
@@ -321,4 +322,8 @@ img {
 .formulario-contacto .enviar {
   display: flex;
   justify-content: flex-end;
+}
+
+.decoration-none{
+  text-decoration: none;
 }
